@@ -1,18 +1,5 @@
-
-
-//install postgreSQL and connect
-const { Pool } = require("pg");
-const pool = new Pool({
-  user: "labber",
-  password: "labber",
-  host: "localhost",
-  database: "midterm"
-});
-
-
-
-const getMapPoints = function (mapID){
-  return pool
+const getMapPoints = function (db, mapID){
+  return db
     .query(
       `
       SELECT *

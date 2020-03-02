@@ -39,7 +39,7 @@ module.exports = (db) => {
 
   router.get("/initalmap", (req, res) => {
 
-    database.getMapPoints(1)  // arg = ID of the map
+    database.getMapPoints(db, 1)  // arg = ID of the map
     .then(coords=> {
       res.send(coords);
     })
@@ -86,7 +86,7 @@ module.exports = (db) => {
 
   router.post("/queryPoints", (req, res) => {
 
-    database.getMapPoints(req.body.map)    // arg is the ID of the map
+    database.getMapPoints(db, req.body.map)    // arg is the ID of the map
     .then(coords=> {
       res.send(coords)
     })
@@ -120,7 +120,7 @@ module.exports = (db) => {
 
   // should this stay?
   router.get("/id/:id", (req, res) => {
-    database.getMapPoints(req.params.id)
+    database.getMapPoints(db, req.params.id)
     .then(results => res.render("index", results))
   })
 
