@@ -58,13 +58,23 @@
 
 
           <div id="ex1" class="modal">
-            <p>Thanks for clicking. That felt good.</p>
+            <p>This Wikimap App was built using JavaScript/NodeJS/Express, and PostgreSQL as the Database. jQuery is used to handle events, with AJAX to simulate a Single page application.</p>
+
+            <br>
+            <h3>A bit about how things works on the backend</h3>
+            <ul>
+              <li>A User can have many Maps</li>
+              <li>Each Map has many Points</li>
+              <li>When a Map button is clicked, an ajax request will be made for the points belonging to the specific Map</li>
+            </ul>
+
+
             <a href="#" rel="modal:close">Close</a>
           </div>
 
           <!-- Link to open the modal -->
-          <button type="submit" class="btn btn-light">
-            <a href="#ex1" rel="modal:open">Open Modal</a>
+          <button type="submit" class="btn btn-light about">
+            <a href="#ex1" rel="modal:open">About This Project</a>
           </button>
 
 

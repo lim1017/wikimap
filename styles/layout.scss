@@ -18,6 +18,8 @@ body{
 
 }
 
+
+
 #Title{
   margin-bottom:0px;
   padding-bottom: 5px;
@@ -147,6 +149,10 @@ h6{
   border-bottom: solid;
 }
 
+.about {
+  text: black;
+  padding-left: 10px;
+}
 
  /* The Modal (background) */
  .modal {
@@ -155,8 +161,8 @@ h6{
   z-index: 10;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
@@ -169,7 +175,7 @@ h6{
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 40%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
