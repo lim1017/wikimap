@@ -54,6 +54,19 @@
           <form method="POST" action="user/logout">
             <button type="submit" class="btn btn-light"> Logout </button>
           </form>
+
+
+
+          <div id="ex1" class="modal">
+            <p>Thanks for clicking. That felt good.</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
+
+          <!-- Link to open the modal -->
+          <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+
+
           <% } else { %>
         <form id="loginForm" method="POST" action="/user/login" class="form-inline my-2 my-lg-0">
           <input class="form-control" type="username" name="username" style="width: 300px; "/>
