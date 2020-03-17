@@ -151,7 +151,11 @@ h6{
 
 .about {
   text: black;
-  padding-left: 10px;
+  margin-left: 15px;
+}
+
+a{
+  color:black;
 }
 
  /* The Modal (background) */
@@ -161,8 +165,8 @@ h6{
   z-index: 10;
   left: 0;
   top: 0;
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 60%;
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
